@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 
 export default function HomePageLayout({ heading, ...props }) {
   return (
-    <div className="min-h-full relative">
+    <div className="min-h-full relative bg-gray-100">
       <div className="h-screen flex flex-col">
         <Header />
 
@@ -17,7 +17,7 @@ export default function HomePageLayout({ heading, ...props }) {
           }}
         >
           {heading && (
-            <h1 className="relative px-2 text-center text-white font-thin uppercase text-xl md:text-5xl z-20">
+            <h1 className="relative px-2 text-center text-white font-thin uppercase text-xl md:text-3xl lg:text-5xl z-20">
               {heading}
             </h1>
           )}

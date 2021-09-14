@@ -12,9 +12,7 @@ export default function Header({ ...props }) {
   return (
     <header className="bg-white relative text-gray-700">
       <div className="max-w-7xl mx-auto flex justify-between items-center content-center py-10 px-2.5">
-        <div className="w-14">
-          <Logo />
-        </div>
+          <Logo color="text-gray-700" size="w-12"/>
 
         <div
           onClick={handleClickToggleMenu}

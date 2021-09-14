@@ -1,13 +1,22 @@
-import React from 'react'
+import React from "react";
+import Logo from "../icons/Logo.jsx";
+import Address from "./Address.jsx";
+import PolicyLinks from "./PolicyLinks.jsx";
+import SocialLinks from "./SocialLinks.jsx";
 
-export default function Footer({...props}) {
+export default function Footer({ ...props }) {
   return (
-    <footer className="bg-white text-gray-700">
-      <div className="w-full max-w7xl mx-auto px-2.5 py-14">
-        <span className="text-base">
-          Copyright © Rhiannon 2021
-        </span>
+    <footer className=" text-gray-100 bg-gray-800 w-full pb-20">
+      <div className="max-w-full mx-auto px-10 md:px-20">
+        <div className="pt-10 pb-2 mb-10 flex border-b">
+          <Logo color="text-gray-50" size="w-12" />
+        </div>
+        <div className="md:flex md:justify-between">
+          <Address />
+          <SocialLinks />
+          <PolicyLinks/>
+        </div>
       </div>
     </footer>
-  )
+  );
 }
