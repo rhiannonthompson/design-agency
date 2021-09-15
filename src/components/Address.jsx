@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Address({...props}) {
   return (
-    <div className="mt-8">
+    <div className="mt-8 mr-8">
     <h6 className="mb-2 text-lg font-bold">Contact</h6>
 
     <div className="flex flex-row w-full mb-2">

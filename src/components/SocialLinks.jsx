@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SocialLinks({ ...props }) {
   return (
-    <div className="mt-8">
+    <div className="mt-8 mr-8">
       <h6 className="mb-2 text-lg font-bold">Find Us On</h6>
       <div>
         <ul className="flex flex-row justify-start md:justify-around md:border md:px-8 md:py-4">

@@ -11,18 +11,23 @@ export default function HomePageLayout({ heading, ...props }) {
         <Header />
 
         <div
-          className=" relative flex flex-col items-center justify-center h-full bg-cover bg-center bg-fixed bg-no-repeat"
+          className=" relative flex flex-col justify-center h-full bg-cover bg-center bg-fixed bg-no-repeat"
           style={{
             backgroundImage: `url(${heroImage})`,
           }}
         >
           {heading && (
-            <h1 className="relative px-2 text-center text-white font-thin uppercase text-xl md:text-3xl lg:text-5xl z-20">
+            
+            <h1 className="relative px-2 text-center text-white font-thin uppercase text-3xl md:text-4xl lg:text-5xl py-4 z-20">
               {heading}
             </h1>
+     
           )}
-          <div className="mt-6 flex justify-center z-20">
-            <Button content="Let's Talk" />
+           <h2 className=" relative px-2 text-center text-white italic font-extralight text-2xl md:text-3xl pb-4 z-20">
+              Live a beautiful life
+              </h2>
+          <div className="flex justify-center z-20">
+            <Button content="Contact Us" />
           </div>
           <div className="z-0 absolute -top-0 h-full w-full bg-black opacity-40"/>
         </div>

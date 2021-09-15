@@ -11,7 +11,7 @@ export default function Footer({ ...props }) {
         <div className="pt-10 pb-2 mb-10 flex border-b">
           <Logo color="text-gray-50" size="w-12" />
         </div>
-        <div className="md:flex md:justify-between">
+        <div className="lg:flex justify-between">
           <Address />
           <SocialLinks />
           <PolicyLinks/>
