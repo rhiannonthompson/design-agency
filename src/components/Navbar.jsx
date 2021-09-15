@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Button from "./Button";
 
 export default function Navbar({ active, handleClick, ...props }) {
   return (
     <nav
       className={`
    ${!active && "inset-0 transform -translate-x-full"}
-    absolute flex flex-col text-center p-16 md:p-0 top-full w-full h-screen bg-white left-0 z-40 translate-x-0 transition-transform duration-300 md:h-0 md:static md:pt-3 md:w-0 md:flex
+    absolute flex flex-col text-center p-16 md:p-0 top-full w-full h-screen bg-white left-0 z-50 translate-x-0 transition-transform duration-300 md:h-0 md:static md:pt-3 md:w-0 md:flex
   `}
     >
       <ul className="flex flex-col border-2 py-16 md:py-0 md:border-0 md:flex-row md:justify-end md:pt-1">

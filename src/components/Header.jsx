@@ -1,18 +1,38 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Logo from "./../icons/Logo.jsx";
 import Navbar from "./Navbar.jsx";
 
 export default function Header({ ...props }) {
   const [active, setActive] = useState(false);
+  const [isSmallMenu, setIsSmallMenu] = useState(false);
+
+  //todo add dynamic offset
+  function handleScroll() {
+    if (window.pageYOffset > 450) {
+      if (!isSmallMenu) setIsSmallMenu(true);
+    } else {
+      if (isSmallMenu) setIsSmallMenu(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
+  });
 
   function handleClickToggleMenu() {
     setActive(!active);
   }
 
   return (
-    <header className="bg-white relative text-gray-700">
-      <div className="max-w-7xl m-auto flex justify-between py-10 px-4">
-      
+      <header className="relative">
+      <div className={`${isSmallMenu ? "transition-all duration-300 py-4" : "py-10 transition-all duration-300"}
+      ${!active && "shadow-md"}
+        bg-white text-gray-700 z-40 w-full inset-x-0 px-4 fixed right-0 left-0
+      `}>
+        <div className="flex max-w-7xl m-auto justify-between">
           <Logo color="text-gray-700" size="w-10 h-10" />
 
           <div
@@ -34,7 +54,8 @@ export default function Header({ ...props }) {
             </svg>
           </div>
           <Navbar active={active} handleClick={handleClickToggleMenu} />
+          </div>
         </div>
-    </header>
+      </header>
   );
 }
