@@ -32,7 +32,7 @@ export default function HomePageLayout({ heading, ...props }) {
           <div className="z-0 absolute -top-0 h-full w-full bg-black opacity-50"/>
         </div>
       </div>
-      <div className="w-full max-w-7xl mx-auto">{props.children}</div>
+      <div className="w-full">{props.children}</div>
       <Footer />
     </div>
   );
