@@ -13,7 +13,7 @@ export default function Navbar({ active, handleClick, ...props }) {
         <li className="list-none mb-6 md:pr-4">
           <Link
             to="/"
-            className="text-xl md:text-base uppercase font-semibold hover:text-green-700 cursor-pointer"
+            className="text-xl md:text-base uppercase font-semibold hover:text-yellow-700 cursor-pointer"
           >
             Home
           </Link>
@@ -21,7 +21,7 @@ export default function Navbar({ active, handleClick, ...props }) {
         <li className="list-none mb-6 md:pr-4">
           <Link
             to="/"
-            className="text-xl md:text-base uppercase hover:text-green-700 cursor-pointer"
+            className="text-xl md:text-base uppercase hover:text-yellow-700 cursor-pointer"
           >
             About
           </Link>
@@ -29,7 +29,7 @@ export default function Navbar({ active, handleClick, ...props }) {
         <li className="list-none">
           <Link
             to="/"
-            className="text-xl md:text-base uppercase hover:text-green-700 cursor-pointer"
+            className="text-xl md:text-base uppercase hover:text-yellow-700 cursor-pointer"
           >
             Contact
           </Link>

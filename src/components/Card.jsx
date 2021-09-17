@@ -1,28 +1,33 @@
-import React from 'react'
+import React from 'react';
+import ButtonLink from './ButtonLink';
 
 export default function Card({img, title, ...props}) {
   return (
-    <div className="w-full md:w-3/6 xl:w-4/12 px-2.5">
-    <div className="bg-white shadow-md cursor-pointer">
+    <div className="w-full">
+    <div className="bg-white shadow-md p-6">
       <div>
-        <img src={img} alt="kitchen" className="w-full p-2.5 h-60 object-cover"/>
-      </div>
-
-      <div className="p-2.5">
-        <ul>
-          <li className="list-none mt-2 pb-1 border-b-2 border-gray-200">
-              <span className="font-bold text-base">{title}</span>
+        <img src={img} alt="kitchen" className="w-full h-60 object-cover"/>
+      </div> 
+        <ul className="mb-6">
+          <li className="list-none pt-6 pb-2 border-b-2 border-gray-300">
+              <span className="font-bold text-base lg:text-lg">{title}</span>
           </li>
-          <li className="list-done text-base pt-1 pb-4">
-            <span>
+          <li className="list-done text-base">
+            <div className="lg:h-32 overflow-ellipsis">
               Short project description lorem ipsum dolor sit amet
               consectetur, adipisicing elit. Ratione harum natus quasi
               veritatis culpa libero delectus suscipit Ratione harum natus
               quasi veritatis culpa libero delectus...
-            </span>
+            </div>
           </li>
-        </ul>
-      </div>
+          </ul>
+          <ButtonLink
+            content="learn more"
+            bgColor={"bg-yellow-700 lg:bg-opacity-90"}
+            borderColor={"border-yellow-700"}
+            size={"text-xs md:text-base"}
+          />
+      
     </div>
   </div>
   )

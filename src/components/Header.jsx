@@ -34,7 +34,6 @@ export default function Header({ ...props }) {
       `}>
         <div className="flex max-w-7xl m-auto justify-between">
           <Logo color="text-gray-700" size="w-10 h-10" />
-
           <div
             onClick={handleClickToggleMenu}
             className="cursor-pointer uppercase md:hidden"
