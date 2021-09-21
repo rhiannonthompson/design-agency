@@ -7,7 +7,7 @@ import stairs from "../assets/images/stairs.jpg";
 export default function Services({ ...props }) {
 
   const imagePosition = {
-    fromRight: "lg:inset-0 sm:transform lg:translate-x-full lg:opacity-0",
+    fromRight: "lg:inset-0 lg:transform lg:translate-x-full lg:opacity-0",
     fromLeft: "lg:inset-0 lg:transform lg:-translate-x-full lg:opacity-0",
     orderFirst: "order-first",
     orderLast: "order-first lg:order-last",

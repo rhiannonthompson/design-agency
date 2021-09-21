@@ -1,7 +1,8 @@
 import React from 'react';
 import ButtonLink from './ButtonLink';
 
-export default function Card({img, title, ...props}) {
+export default function Card({ img, title, ...props }) {
+  
   return (
     <div className="w-full">
     <div className="bg-white shadow-md p-6">
@@ -12,12 +13,11 @@ export default function Card({img, title, ...props}) {
           <li className="list-none pt-6 pb-2 border-b-2 border-gray-300">
               <span className="font-bold text-base lg:text-lg">{title}</span>
           </li>
-          <li className="list-done text-base">
-            <div className="lg:h-32 overflow-ellipsis">
+          <li className="list-done text-base lg:h-24 overflow-hidden">
+            <div>
               Short project description lorem ipsum dolor sit amet
               consectetur, adipisicing elit. Ratione harum natus quasi
-              veritatis culpa libero delectus suscipit Ratione harum natus
-              quasi veritatis culpa libero delectus...
+              veritatis culpa libero delectus suscipis. Lorem ipsum dolor sit adipisicing elit. Repellendus velit atque accusantium molestias ipsa numquam iste, minima eos excepturi modi dolores suscipit minus commodi eligendi hic aliquid reiciendis veritatis fugit deserunt dolor, esse quas a saepe. Rerum accusantium ex sit aut nam, quidem autem?
             </div>
           </li>
           </ul>
