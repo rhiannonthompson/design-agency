@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 export default function ButtonLink({ content, bgColor, borderColor, size, ...props }) {
   return (
     <button
-      className={`border-2 px-4 py-1 ${borderColor} ${bgColor} transform transition duration-150 ease-in-out hover:bg-opacity-100 hover:scale-105`}
+      className={`${borderColor} ${bgColor} btn`}
     >
       <Link
         to="/"
-        className={`${size} uppercase text-white font-extralight`}
+        className={`${size} btn-text`}
       >
         {content}
       </Link>

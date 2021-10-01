@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Logo from "./../icons/Logo.jsx";
-import Navbar from "./Navbar.jsx";
+import Logo from "../../icons/Logo.jsx";
+import Navbar from "./Navbar.jsx.js";
 
 export default function Header({ ...props }) {
   const [active, setActive] = useState(false);
