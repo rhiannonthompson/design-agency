@@ -9,6 +9,7 @@ export default function Cards({ ...props }) {
       {CARD_CONTENT.map((item) => (
         <Card
           key={item.key}
+          id={item.key}
           image={item.image}
           title={item.title}
           description={item.description}

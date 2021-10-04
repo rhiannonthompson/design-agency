@@ -21,6 +21,7 @@ export default function Services({ ...props }) {
         item.id === POST_CONTENT.length ? (
           <Service
             key={item.id}
+            id={item.id}
             image={item.image}
             title={item.title}
             subtitle={item.subTitle}
@@ -30,6 +31,7 @@ export default function Services({ ...props }) {
         ) : item.id % 2 === 0 ? (
           <Service
             key={item.id}
+            id={item.id}
             image={item.image}
             title={item.title}
             subtitle={item.subTitle}
@@ -41,6 +43,7 @@ export default function Services({ ...props }) {
         ) : (
           <Service
             key={item.id}
+            id={item.id}
             image={item.image}
             title={item.title}
             subtitle={item.subTitle}
@@ -51,4 +54,3 @@ export default function Services({ ...props }) {
     </>
   );
 }
-

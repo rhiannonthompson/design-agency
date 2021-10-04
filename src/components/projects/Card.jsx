@@ -3,7 +3,7 @@ import ButtonLink from '../common/ButtonLink';
 import kitchen from "../../assets/images/kitchen.jpg"
 import NAV_CONTENT from '../../content/navContent';
 
-export default function Card({ image, title, description, ...props }) {
+export default function Card({ id, image, title, description, ...props }) {
   
   const btnContent = NAV_CONTENT.buttonLinks.more;
   
@@ -25,6 +25,7 @@ export default function Card({ image, title, description, ...props }) {
           </ul>
           <ButtonLink
             content={btnContent}
+            linkTo={`/project/${id}`}
             bgColor={"bg-yellow-700 lg:bg-opacity-90"}
             borderColor={"border-yellow-700"}
             size={"text-xs md:text-base"}

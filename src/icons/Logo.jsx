@@ -1,9 +1,17 @@
 import React from "react";
+import { useHistory } from "react-router";
 
 export default function Logo({ color, size, hover, ...props }) {
+  
+  const location = useHistory();
+
+  function handleClick() {
+    location.push("/");
+  }
+  
   return (
     <div className=" max-w-max">
-      <div className="group flex flex-row items-end cursor-pointer">
+      <div onClick={handleClick} className="group flex flex-row items-end cursor-pointer">
           <svg
             className={`${color} ${size} group-hover:text-yellow-700`}
             xmlns="http://www.w3.org/2000/svg"

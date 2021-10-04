@@ -1,12 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import NAV_CONTENT from "../../content/navContent";
 
 export default function Navbar({ active, handleClick, ...props }) {
-  
   const { home, about, contact } = NAV_CONTENT.navLinks;
   const { close } = NAV_CONTENT.buttonAction;
-  
+
   return (
     <nav
       className={`
@@ -16,28 +15,35 @@ export default function Navbar({ active, handleClick, ...props }) {
     >
       <ul className="nav-links">
         <li className="nav-links-items">
-          <Link
+          <NavLink
+            onClick={handleClick}
             to="/"
-            className="font-semibold nav-links-text"
-          >
+            className="nav-links-text"
+            activeClassName="font-semibold"
+            exact
+            >
             {home}
-          </Link>
+          </NavLink>
         </li>
         <li className="nav-links-items">
-          <Link
-            to="/"
+          <NavLink
+            onClick={handleClick}
+            to="/about"
             className="nav-links-text"
+            activeClassName="font-semibold"
           >
             {about}
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link
-            to="/"
+          <NavLink
+            onClick={handleClick}
+            to="/contact"
             className="nav-links-text"
+            activeClassName="font-semibold"
           >
             {contact}
-          </Link>
+          </NavLink>
         </li>
         <li
           className={`${!active && "hidden"}
@@ -47,9 +53,9 @@ export default function Navbar({ active, handleClick, ...props }) {
           <button
             onClick={handleClick}
             className={`${!active && "hidden"}
-               bg-gray-800 py-2 px-4 text-sm uppercase text-white font-light
+               md:hidden bg-gray-800 py-2 px-4 text-sm uppercase text-white font-light
             `}
-          >  
+          >
             {close}
           </button>
         </li>

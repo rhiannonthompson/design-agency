@@ -57,7 +57,7 @@
 }
 
 .nav-links-text {
-  @apply text-xl md:text-base uppercase hover:text-yellow-700 cursor-pointer;
+  @apply text-xl md:text-base uppercase md:hover:text-yellow-700 cursor-pointer;
 }
 
 /* cards */

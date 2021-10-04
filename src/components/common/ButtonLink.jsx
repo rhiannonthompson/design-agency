@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function ButtonLink({ content, bgColor, borderColor, size, ...props }) {
+export default function ButtonLink({ content, bgColor, borderColor, size, linkTo, ...props }) {
   return (
     <button
       className={`${borderColor} ${bgColor} btn`}
     >
       <Link
-        to="/"
+        to={linkTo}
         className={`${size} btn-text`}
       >
         {content}
@@ -15,3 +15,4 @@ export default function ButtonLink({ content, bgColor, borderColor, size, ...pro
     </button>
   );
 }
+

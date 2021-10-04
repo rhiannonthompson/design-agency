@@ -6,6 +6,7 @@ import NAV_CONTENT from "../../content/navContent";
 
 
 export default function Service({
+  id,
   image,
   title,
   subtitle,
@@ -43,13 +44,14 @@ export default function Service({
         <div className="my-8">
           <ButtonLink
             content={btnContent}
+            linkTo={`/services/${id}`}
             bgColor={"bg-yellow-700 lg:bg-opacity-90"}
             borderColor={"border-yellow-700"}
             size={"text-sm md:text-lg"}
           />
         </div>
       </div>
-      <div className={`col-span-1 pt-10 sm:pt-0 ${order}`}>
+      <div className={`col-span-1 pt-6 sm:pt-0 ${order}`}>
         <div
           ref={ref}
           className={`${!inView && direction} 
