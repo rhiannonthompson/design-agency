@@ -29,8 +29,8 @@ export default function Header({ ...props }) {
   return (
       <header className="relative">
       <div className={`${isSmallMenu ? "transition-all duration-300 py-4" : "py-10 transition-all duration-300"}
-      ${!active && "shadow-md"}
-        bg-white text-gray-700 z-40 w-full inset-x-0 px-4 fixed right-0 left-0
+      
+        bg-white text-gray-700 z-40 w-full inset-x-0 px-4 fixed right-0 left-0 md:shadow-md
       `}>
         <div className="flex max-w-7xl m-auto justify-between">
           <Logo color="text-gray-700" size="w-10 h-10" />

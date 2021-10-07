@@ -23,7 +23,7 @@ export default function Card({ id, image, title, description, ...props }) {
             </div>
           </li>
           </ul>
-          <ButtonLink
+        <ButtonLink
             content={btnContent}
             linkTo={`/project/${id}`}
             bgColor={"bg-yellow-700 lg:bg-opacity-90"}

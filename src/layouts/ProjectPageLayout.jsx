@@ -2,8 +2,8 @@ import React from "react";
 
 export default function ProjectPageLayout({ ...props }) {
   return (
-    <div className="min-h-full relative bg-yellow-50">
-      <div className="w-full absolute top-28">{props.children}</div>
+    <div className="bg-indigo-100 py-28">
+      <div>{props.children}</div>
     </div>
   );
 }

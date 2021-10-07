@@ -21,7 +21,7 @@ export default function Navbar({ active, handleClick, ...props }) {
             className="nav-links-text"
             activeClassName="font-semibold"
             exact
-            >
+          >
             {home}
           </NavLink>
         </li>
