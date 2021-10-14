@@ -2,6 +2,8 @@ const NAV_CONTENT = {
   navLinks: {
     home: "home",
     about: "about",
+    services: "services",
+    projects: "projects",
     contact: "contact"
   },
   buttonLinks: {

@@ -3,8 +3,11 @@ import { NavLink } from "react-router-dom";
 import NAV_CONTENT from "../../content/navContent";
 
 export default function Navbar({ active, handleClick, ...props }) {
-  const { home, about, contact } = NAV_CONTENT.navLinks;
+  
+
+  const { home, about, services, projects, contact } = NAV_CONTENT.navLinks;
   const { close } = NAV_CONTENT.buttonAction;
+  
 
   return (
     <nav
@@ -33,6 +36,26 @@ export default function Navbar({ active, handleClick, ...props }) {
             activeClassName="font-semibold"
           >
             {about}
+          </NavLink>
+        </li>
+        <li className="nav-links-items">
+          <NavLink
+            onClick={handleClick}
+            to="/services"
+            className="nav-links-text"
+            activeClassName="font-semibold"
+          >
+            {services}
+          </NavLink>
+        </li>
+        <li className="nav-links-items">
+          <NavLink
+            onClick={handleClick}
+            to="/projects"
+            className="nav-links-text"
+            activeClassName="font-semibold"
+          >
+            {projects}
           </NavLink>
         </li>
         <li>

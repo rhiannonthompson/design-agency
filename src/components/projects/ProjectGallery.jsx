@@ -13,7 +13,7 @@ export default function ProjectGallery() {
     <div className="grid mx-4 md:mx-8 lg:mx-32 rounded-lg gap-4 md:gap-6 md:grid-cols-7 md:grid-rows-8">
       <div className="md:col-span-3 md:row-span-2">
         <img
-          className="object-cover w-full h-full rounded-lg border-white"
+          className="object-cover w-full h-full rounded-lg"
           src={kitchenTable}
           alt="kitchen table"
         />

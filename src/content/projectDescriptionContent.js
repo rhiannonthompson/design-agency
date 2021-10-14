@@ -1,0 +1,7 @@
+const PROJECT_DESCRIPTION_CONTENT = {
+  firstParagraph: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos quidem dignissimos laboriosam molestiae nesciunt et nulla minima dolor? Labore distinctio modi dolorum rem natus voluptatibus eveniet recusandae facere ipsum, aperiam architecto explicabo repellendus dolore laudantium soluta illo deleniti quas doloribus nam eligendi dolores deserunt officiis minima mollitia! Quaerat rem distinctio porro unde ad officiis alias maiores ratione dolore nihil atque id ullam cupiditate illum animi soluta facere numquam, vitae, est obcaecati. Eveniet placeat molestias excepturi facere ipsa aliquam maxime ab incidunt, asperiores recusandae amet mollitia itaque minima sed voluptate ullam libero eos alias! Excepturi odio ipsum hic, possimus laudantium dicta?",
+  
+  secondParagraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae expedita commodi, cupiditate suscipit fuga vel asperiores nostrum, explicabo aliquam, accusantium dolores neque est corporis quia repellat culpa at? Facilis incidunt reiciendis, quidem illum sequi, optio excepturi quibusdam dicta, culpa maxime eligendi reprehenderit consectetur eveniet soluta magnam quis quo porro distinctio iste sapiente? Cumque aliquid laboriosam veritatis.",
+}
+
+export default PROJECT_DESCRIPTION_CONTENT;

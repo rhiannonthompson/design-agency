@@ -24,7 +24,6 @@ ButtonLink.defaultProps = {
   bgColor: "bg-yellow-800",
   borderColor: "bg-yellow-800",
   size: "text-base",
-  linkTo: "/",
   handleClick: scrollToTop,
 }
 
