@@ -8,8 +8,6 @@ import CAROUSEL_CONTENT from "../../content/carouselContent.js";
 export default function Carousel() {
   const [cardArray, setCardArray] = useState([...CAROUSEL_CONTENT]);
   const isPageLarge = useMediaQuery(`(min-width: 768px)`);
-
-  console.log(cardArray.key);
   const LARGE_CARD_DISPLAY_COUNT = 3;
   const CARD_DISPLAY_COUNT = 1;
 
