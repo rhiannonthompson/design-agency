@@ -27,11 +27,11 @@ export default function Carousel() {
   }
 
   function handleMoveRight() {
-    isPageLarge ? shiftArrayRight() : shiftArrayLeft();
+    shiftArrayRight();
   }
 
   function handleMoveLeft() {
-    isPageLarge ? shiftArrayLeft() : shiftArrayRight();
+    shiftArrayLeft();
   }
 
   return (

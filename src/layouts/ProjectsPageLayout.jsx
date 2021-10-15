@@ -1,10 +1,9 @@
-import React from "react";
+import React from 'react'
 
-export default function ProjectsPageLayout({ ...props }) {
+export default function ProjectsPageLayout({...props}) {
   return (
-    <div className="bg-indigo-100 py-28">
-      <div>{props.children}</div>
+    <div className="min-h-full bg-yellow-100 py-28">
+      <div className="w-full">{props.children}</div>
     </div>
-  );
+  )
 }
-

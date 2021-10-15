@@ -25,11 +25,11 @@ export default function ProjectDescription() {
         <div className="w-4" />
 
         <ButtonLink
-          content={"back"}
+          content={"Other Projects"}
           bgColor={"bg-gray-800 lg:bg-opacity-90"}
           borderColor={"border-gray-700"}
           size={"text-sm md:text-lg"}
-          linkTo={"/"}
+          linkTo={"/projects"}
         />
       </div>
     </div>

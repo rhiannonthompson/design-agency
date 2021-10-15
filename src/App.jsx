@@ -8,12 +8,18 @@ import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import ContactPageLayout from "./layouts/ContactPageLayout";
 import AboutPageLayout from "./layouts/AboutPageLayout";
-import ServicePageLayout from "./layouts/ServicePageLayout";
-import ServicePage from "./pages/ServicePage";
+
+import SingleServicePageLayout from "./layouts/SingleServicePageLayout";
+import SingleServicePage from "./pages/SingleServicePage";
 import ServicesPageLayout from "./layouts/ServicesPageLayout";
 import ServicesPage from "./pages/ServicesPage";
+
+import SingleProjectPageLayout from "./layouts/SingleProjectPageLayout";
+import SingleProjectPage from "./pages/SingleProjectPage";
+import ProjectsPage from "./pages/ProjectsPage"
 import ProjectsPageLayout from "./layouts/ProjectsPageLayout";
-import ProjectsPage from "./pages/ProjectsPage";
+
+
 import ScrollToTop from "./utilities/ScrollToTop";
 
 export default function App() {
@@ -38,14 +44,19 @@ export default function App() {
             </ServicesPageLayout>
           </Route>
           <Route path="/services/:id">
-            <ServicePageLayout>
-              <ServicePage />
-            </ServicePageLayout>
+            <SingleServicePageLayout>
+              <SingleServicePage />
+            </SingleServicePageLayout>
           </Route>
-          <Route path="/projects/:id">
+          <Route exact path="/projects">
             <ProjectsPageLayout>
               <ProjectsPage />
             </ProjectsPageLayout>
+          </Route> 
+          <Route path="/projects/:id">
+            <SingleProjectPageLayout>
+              <SingleProjectPage />
+            </SingleProjectPageLayout>
           </Route>
           <Route exact path="/contact">
             <ContactPageLayout>

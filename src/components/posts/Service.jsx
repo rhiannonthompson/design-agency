@@ -29,7 +29,7 @@ export default function Service({
       className={`${border} section-grid`}
     >
       <div className={`${textMargin} col-span-1`}>
-        <h4 className="section-title pt-10 mb-2 md:pt-0 md:mb-10">
+        <h4 className="section-title pt-8 mb-6 md:pt-0 md:mb-10">
           {title}
         </h4>
         <h5 className="section-subtitle mb-2 md:mb-4">

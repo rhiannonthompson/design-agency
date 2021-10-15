@@ -1,11 +1,12 @@
-import React from 'react'
-import Section from '../layouts/Section'
+import React from "react";
+import AboutText from "../components/about/AboutText";
+import Section from "../layouts/Section";
+
 
 export default function AboutPage() {
-
   return (
-    <Section heading={"About"}>
-       <div>About Page</div>
+    <Section heading={"About Us"}>
+     <AboutText/>
     </Section>
-  )
+  );
 }

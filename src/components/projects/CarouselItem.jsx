@@ -10,7 +10,7 @@ export default function CarouselItem({
 }) {
   
   return (
-    <Link to={`/project/${id}`} onClick={scrollToTop} className="lg:mx-4 w-full cursor-pointer">
+    <Link to={`/projects/${id}`} onClick={scrollToTop} className="lg:mx-4 w-full cursor-pointer">
       <div className="bg-white rounded-lg shadow-md">
         <div className="flex-col p-2">
           <div className="relative">

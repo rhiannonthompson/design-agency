@@ -84,7 +84,7 @@ export default function TestForm({ ...props }) {
   }
 
   return (
-    <div className="p-12 w-full lg:w-1/2 flex flex-col shadow-md bg-white">
+    <div className="p-4 md:p-8 w-full flex flex-col shadow-md bg-white">
       {message && (
         <div className={`my-4 text-white w-full p-4 ${message.class}`}>
           {message.text}
