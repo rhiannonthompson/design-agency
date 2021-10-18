@@ -10,17 +10,17 @@ export default function Address({ heading, contact, ...props }) {
   return (
     <div className="mt-8 mr-8">
       <h6 className="footer-heading">{heading}</h6>
-      <div className="address-item flex-row w-full">
+      <div className="flex mb-2 flex-row w-full">
         <EnvelopeIcon />
-        <div className="address-text">{address}</div>
+        <div className="text-sm">{address}</div>
       </div>
-      <div className="address-item">
+      <div className="flex flex-row mb-2">
         <PhoneIcon />
-        <div className="ml-1 address-text">{phone}</div>
+        <div className="ml-1 text-sm">{phone}</div>
       </div>
-      <div className="address-item">
+      <div className="flex flex-row mb-2">
         <AtIcon />
-        <div className="text-link">{email}</div>
+        <div className="underline md:no-underline md:hover:underline text-sm cursor-pointer">{email}</div>
       </div>
     </div>
   );
