@@ -12,15 +12,15 @@ export default function Address({ heading, contact, ...props }) {
       <h6 className="footer-heading">{heading}</h6>
       <div className="address-item flex-row w-full">
         <EnvelopeIcon />
-        <span className="address-text">{address}</span>
+        <div className="address-text">{address}</div>
       </div>
       <div className="address-item">
         <PhoneIcon />
-        <span className="ml-1 address-text">{phone}</span>
+        <div className="ml-1 address-text">{phone}</div>
       </div>
       <div className="address-item">
         <AtIcon />
-        <span className="text-link">{email}</span>
+        <div className="text-link">{email}</div>
       </div>
     </div>
   );

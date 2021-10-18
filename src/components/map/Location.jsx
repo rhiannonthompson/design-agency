@@ -16,11 +16,11 @@ export default function Location() {
     <div className="lg:block hidden mt-8">
       <div className="flex mb-4">
         <PhoneIcon />
-        <span className="ml-1 text-lg font-semibold">{phone}</span>
+        <div className="ml-1 text-lg font-semibold">{phone}</div>
       </div>
       <div className="flex mb-2">
         <AtIcon />
-        <span className="underline md:no-underline md:hover:underline text-lg cursor-pointer font-semibold">{email}</span>
+        <div className="underline md:no-underline md:hover:underline text-lg cursor-pointer font-semibold">{email}</div>
       </div>
     </div>
   </div>

@@ -9,7 +9,7 @@ export default function Hero() {
 
   return (
     <div
-      className=" relative flex flex-col justify-center h-full bg-cover bg-center bg-fixed bg-no-repeat"
+      className=" relative flex flex-col justify-center h-full bg-cover bg-center bg-scroll lg:bg-fixed bg-no-repeat"
       style={{
         backgroundImage: `url(${heroImage})`,
       }}
