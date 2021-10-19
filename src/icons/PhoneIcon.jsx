@@ -8,6 +8,7 @@ export default function PhoneIcon() {
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
+      alt="phone"
     >
       <path
         strokeLinecap="round"

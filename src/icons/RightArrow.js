@@ -7,6 +7,7 @@ export default function RightArrow() {
       className="h-12 w-12 lg:h-16 lg:w-16 text-gray-700"
       viewBox="0 0 20 20"
       fill="currentColor"
+      alt="right arrow"
     >
       <path
         fillRule="evenodd"

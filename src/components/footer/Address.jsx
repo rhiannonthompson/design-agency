@@ -9,7 +9,7 @@ export default function Address({ heading, contact, ...props }) {
 
   return (
     <div className="mt-8 mr-8">
-      <h6 className="footer-heading">{heading}</h6>
+      <h4 className="mb-2 text-lg font-bold">{heading}</h4>
       <div className="flex mb-2 flex-row w-full">
         <EnvelopeIcon />
         <div className="text-sm">{address}</div>

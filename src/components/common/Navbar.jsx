@@ -16,43 +16,43 @@ export default function Navbar({ active, handleClick, ...props }) {
     absolute flex flex-col text-center p-16 md:p-0 top-full w-full h-screen bg-white left-0 z-50 translate-x-0 transition-transform duration-300 md:h-0 md:static md:pt-3 md:w-0 md:flex
   `}
     >
-      <ul className="nav-links">
-        <li className="nav-links-items">
+      <ul className="flex flex-col border-2 py-16 md:py-0 md:border-0 md:flex-row md:justify-end md:pt-1">
+        <li className="mb-6 md:pr-4">
           <NavLink
             onClick={handleClick}
             to="/"
-            className="nav-links-text"
+            className="text-xl md:text-base uppercase md:hover:text-yellow-700 cursor-pointer"
             activeClassName="font-semibold"
             exact
           >
             {home}
           </NavLink>
         </li>
-        <li className="nav-links-items">
+        <li className="mb-6 md:pr-4">
           <NavLink
             onClick={handleClick}
             to="/about"
-            className="nav-links-text"
+            className="text-xl md:text-base uppercase md:hover:text-yellow-700 cursor-pointer"
             activeClassName="font-semibold"
           >
             {about}
           </NavLink>
         </li>
-        <li className="nav-links-items">
+        <li className="mb-6 md:pr-4">
           <NavLink
             onClick={handleClick}
             to="/services"
-            className="nav-links-text"
+            className="text-xl md:text-base uppercase md:hover:text-yellow-700 cursor-pointer"
             activeClassName="font-semibold"
           >
             {services}
           </NavLink>
         </li>
-        <li className="nav-links-items">
+        <li className="mb-6 md:pr-4">
           <NavLink
             onClick={handleClick}
             to="/projects"
-            className="nav-links-text"
+            className="text-xl md:text-base uppercase md:hover:text-yellow-700 cursor-pointer"
             activeClassName="font-semibold"
           >
             {projects}
@@ -62,7 +62,7 @@ export default function Navbar({ active, handleClick, ...props }) {
           <NavLink
             onClick={handleClick}
             to="/contact"
-            className="nav-links-text"
+            className="text-xl md:text-base uppercase md:hover:text-yellow-700 cursor-pointer"
             activeClassName="font-semibold"
           >
             {contact}

@@ -12,7 +12,7 @@ export default function SingleProjectPage({ ...props }) {
     <>
       <div className="flex-col align-center">
         <div className="max-w-7xl mx-auto pt-16 pb-8 md:py-16 px-6">
-          <h3 className="h3">{`Project ${id}`}</h3>
+          <h3 className="text-3xl md:text-5xl font-thin border-b-2 border-gray-600 pb-4 md:py-6">{`Project ${id}`}</h3>
           <ProjectDescription />
         </div>
         <ProjectGallery />

@@ -8,6 +8,7 @@ export default function AtIcon() {
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
+      alt="at"
     >
       <path
         strokeLinecap="round"

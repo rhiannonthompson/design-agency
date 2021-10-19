@@ -91,7 +91,7 @@ export default function TestForm({ ...props }) {
         </div>
       )}
       <form className="flex flex-col" onSubmit={handleSubmit}>
-        <div className="formInput">
+        <div className="mt-3 mb-1 flex flex-col">
           <InputField
             ref={inputRefs.current[0]}
             placeholder="Your name"
@@ -104,7 +104,7 @@ export default function TestForm({ ...props }) {
           />
         </div>
 
-        <div className="formInput">
+        <div className="mt-3 mb-1 flex flex-col">
           <InputField
             ref={inputRefs.current[1]}
             placeholder="Your email"
@@ -117,7 +117,7 @@ export default function TestForm({ ...props }) {
           />
         </div>
 
-        <div className="formInput">
+        <div className="mt-3 mb-1 flex flex-col">
           <InputField
             ref={inputRefs.current[2]}
             placeholder="Your message"
@@ -138,7 +138,7 @@ export default function TestForm({ ...props }) {
 
         <button
           disabled={submitting}
-          className="btn-submit"
+          className="mt-4 p-4 bg-yellow-700 text-white font-semibold lg:text-lg uppercase transform hover:scale-105 duration-500"
           type="submit"
         >
           {submitting ? "Submitting..." : btnContent}

@@ -6,7 +6,7 @@ export default function Policy({heading, policyInfo, links, ...props}) {
   
   return (
     <div className=" flex flex-col mt-8">
-      <h6 className="footer-heading">{heading}</h6>
+      <h4 className=" mb-2 text-lg font-bold">{heading}</h4>
     <p className=" mb-2 text-sm md:text-md max-w-xl">
         {policyInfo}
     </p>

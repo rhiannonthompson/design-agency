@@ -15,14 +15,14 @@ export default function Hero() {
       }}
     >
       {mainTitle ? (
-        <h1 className="h1">{mainTitle}</h1>
+        <h1 className="relative px-2 text-center text-white font-thin uppercase text-2xl md:text-4xl lg:text-5xl mt-40 pb-4 z-20">{mainTitle}</h1>
       ) : (
-        <h1 className="h1">{defaultTitle}</h1>
+        <h1 className="relative px-2 text-center text-white font-thin uppercase text-2xl md:text-4xl lg:text-5xl mt-40 pb-4 z-20">{defaultTitle}</h1>
       )}
       {subTitle ? (
-        <h2 className="h2">{subTitle}</h2>
+        <h2 className="relative px-2 text-center text-white italic font-extralight text-xl md:text-3xl pb-8 z-20">{subTitle}</h2>
       ) : (
-        <h2 className="h2">{defaultTitle}</h2>
+        <h2 className="relative px-2 text-center text-white italic font-extralight text-xl md:text-3xl pb-8 z-20">{defaultTitle}</h2>
       )}
       <div className="flex justify-center z-20">
         <ButtonLink

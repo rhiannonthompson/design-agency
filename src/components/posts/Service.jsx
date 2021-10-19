@@ -2,8 +2,6 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 import ButtonLink from "../common/ButtonLink";
 import moodboard from "../../assets/images/moodboard.jpg";
-import NAV_CONTENT from "../../content/navContent";
-
 
 export default function Service({
   id,
@@ -17,33 +15,33 @@ export default function Service({
   border,
   ...props
 }) {
+  
   const [ref, inView] = useInView({
     threshold: 0.01,
     triggerOnce: true,
   });
 
-  const btnContent = NAV_CONTENT.buttonLinks.more;
 
   return (
     <div
-      className={`${border} section-grid`}
+      className={`${border} grid pb-8 lg:grid-cols-2 sm:gap-6 my-8 md:mt-20 md:my-20 lg:pt-10 lg:pb-20`}
     >
       <div className={`${textMargin} col-span-1`}>
-        <h4 className="section-title pt-8 mb-6 md:pt-0 md:mb-10">
+        <h4 className="text-3xl md:text-4xl font-thin pt-8 mb-6 md:pt-0 md:mb-10">
           {title}
         </h4>
-        <h5 className="section-subtitle mb-2 md:mb-4">
+        <h5 className="text-xl md:text-2xl font-semibold mb-2 md:mb-4">
           {subtitle}
         </h5>
         {description.map((item) =>
-           <p key={item.id} className="section-text mb-2">
+           <p key={item.id} className="text-base md:text-lg mb-2">
              {item.content}
            </p>
         )}
        
         <div className="my-8">
           <ButtonLink
-            content={btnContent}
+            content={`Service ${id}`}
             linkTo={`/services/${id}`}
             bgColor={"bg-yellow-700 lg:bg-opacity-90"}
             borderColor={"border-yellow-700"}
@@ -55,7 +53,7 @@ export default function Service({
         <div
           ref={ref}
           className={`${!inView && direction} 
-          section-img`}
+          mb-4 transform translate-x-0 transition-transform duration-1000 ease-out`}
         >
           <img src={image} alt="moodboard" />
         </div>

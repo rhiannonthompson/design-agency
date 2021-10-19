@@ -8,6 +8,7 @@ export default function EnvelopeIcon() {
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
+      alt="envelope"
     >
       <path
         strokeLinecap="round"

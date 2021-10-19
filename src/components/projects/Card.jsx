@@ -1,11 +1,8 @@
 import React from 'react';
 import ButtonLink from '../common/ButtonLink';
 import kitchen from "../../assets/images/kitchen.jpg"
-import NAV_CONTENT from '../../content/navContent';
 
 export default function Card({ id, image, title, description, ...props }) {
-  
-  const btnContent = NAV_CONTENT.buttonLinks.more;
   
   return (
     <div className="w-full">
@@ -24,7 +21,7 @@ export default function Card({ id, image, title, description, ...props }) {
           </li>
           </ul>
         <ButtonLink
-            content={btnContent}
+            content={`Project ${id}`}
             linkTo={`/projects/${id}`}
             bgColor={"bg-yellow-700 lg:bg-opacity-90"}
             borderColor={"border-yellow-700"}

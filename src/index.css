@@ -90,7 +90,7 @@
 
 /* form */
 
-.formInput {
+.form-input {
   @apply mt-3 mb-1 flex flex-col;
 }
 
