@@ -5,7 +5,7 @@ import Section from "../layouts/Section";
 
 export default function AboutPage() {
   return (
-    <Section heading={"About Us"}>
+    <Section heading={"About Us"}>  
      <AboutText/>
     </Section>
   );

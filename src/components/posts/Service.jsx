@@ -2,6 +2,7 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 import ButtonLink from "../common/ButtonLink";
 import moodboard from "../../assets/images/moodboard.jpg";
+import NAV_CONTENT from "../../content/navContent";
 
 export default function Service({
   id,
@@ -22,12 +23,15 @@ export default function Service({
   });
 
 
+  const content = NAV_CONTENT.buttonLinks.service;
+
+
   return (
     <div
       className={`${border} grid pb-8 lg:grid-cols-2 sm:gap-6 mt-10 md:mt-20 md:my-20 lg:pt-10 lg:pb-20`}
     >
       <div className={`${textMargin} col-span-1`}>
-        <h4 className="text-3xl md:text-4xl font-thin pt-8 mb-6 md:pt-0 md:mb-10">
+        <h4 className="text-2xl md:text-3xl font-light pt-8 mb-6 md:pt-0 md:mb-10">
           {title}
         </h4>
         <h5 className="text-xl md:text-2xl font-semibold mb-2 md:mb-4">
@@ -41,11 +45,11 @@ export default function Service({
        
         <div className="my-8">
           <ButtonLink
-            content={`Service ${id}`}
+            content={`${content} ${id}`}
             linkTo={`/services/${id}`}
             bgColor={"bg-yellow-700 lg:bg-opacity-90"}
             borderColor={"border-yellow-700"}
-            size={"text-sm md:text-lg"}
+            size={"text-sm md:text-lg"} 
           />
         </div>
       </div>

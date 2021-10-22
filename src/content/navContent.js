@@ -9,6 +9,9 @@ const NAV_CONTENT = {
   buttonLinks: {
     contact: "contact us",
     more: "learn more",
+    back: "back",
+    service: "service",
+    project: "project",
   },
   buttonAction: {
     close: "close menu"
