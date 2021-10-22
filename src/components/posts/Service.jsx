@@ -24,7 +24,7 @@ export default function Service({
 
   return (
     <div
-      className={`${border} grid pb-8 lg:grid-cols-2 sm:gap-6 my-8 md:mt-20 md:my-20 lg:pt-10 lg:pb-20`}
+      className={`${border} grid pb-8 lg:grid-cols-2 sm:gap-6 mt-10 md:mt-20 md:my-20 lg:pt-10 lg:pb-20`}
     >
       <div className={`${textMargin} col-span-1`}>
         <h4 className="text-3xl md:text-4xl font-thin pt-8 mb-6 md:pt-0 md:mb-10">
@@ -34,7 +34,7 @@ export default function Service({
           {subtitle}
         </h5>
         {description.map((item) =>
-           <p key={item.id} className="text-base md:text-lg mb-2">
+           <p key={item.id} className="text-base md:text-lg mb-2 leading-6 tracking-wide">
              {item.content}
            </p>
         )}

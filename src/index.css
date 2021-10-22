@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,300;0,400;0,600;0,700;1,300&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -39,7 +41,7 @@
 }
 
 .btn-submit {
-  @apply mt-4 p-4 bg-yellow-700 text-white font-semibold lg:text-lg uppercase transform hover:scale-105 duration-500
+  @apply mt-4 p-4 bg-yellow-700 text-white font-semibold lg:text-lg uppercase transform hover:scale-105 duration-500;
 }
 
 .btn-text {

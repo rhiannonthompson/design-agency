@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import scrollToTop from "../../utilities/scrollToTop";
 
 export default function CarouselItem({
   content,
@@ -10,7 +9,7 @@ export default function CarouselItem({
 }) {
   
   return (
-    <Link name={content} alt={content} to={`/projects/${id}`} onClick={scrollToTop} className="lg:mx-4 w-full cursor-pointer">
+    <Link name={content} alt={content} to={`/projects/${id}`} className="lg:mx-4 w-full cursor-pointer">
       <div className="bg-white rounded-lg shadow-md">
         <div className="flex-col p-2">
           <div className="relative">

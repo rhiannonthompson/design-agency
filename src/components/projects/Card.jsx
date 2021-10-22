@@ -15,7 +15,7 @@ export default function Card({ id, image, title, description, ...props }) {
               <span className="card-title">{title}</span>
           </li>
           <li>
-            <div className="py-4">
+            <div className="py-4 leading-6 tracking-wide">
               {description}
             </div>
           </li>

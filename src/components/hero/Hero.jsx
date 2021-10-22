@@ -15,11 +15,11 @@ export default function Hero() {
       }}
     >
       {mainTitle ? (
-        <h1 className="relative px-2 text-center text-white font-thin uppercase text-2xl md:text-4xl lg:text-5xl mt-40 pb-4 z-20">
+        <h1 className="relative px-2 text-center text-white uppercase text-2xl md:text-4xl lg:text-5xl mt-40 pb-4 z-20">
           {mainTitle}
         </h1>
       ) : (
-        <h1 className="relative px-2 text-center text-white font-thin uppercase text-2xl md:text-4xl lg:text-5xl mt-40 pb-4 z-20">
+        <h1 className="relative px-2 text-center text-white uppercase text-2xl md:text-4xl lg:text-5xl mt-40 pb-4 z-20">
           {defaultTitle}
         </h1>
       )}

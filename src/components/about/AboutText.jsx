@@ -9,7 +9,8 @@ export default function AboutText() {
       <img className="rounded-sm" src={planningImage} alt={"planning session"}/>
     </div>
     <div className="mt-8 lg:mt-0">
-      <p className="text-lg leading-8 mb-4 text-justify lg:text-left">
+        <p className="
+      text-lg leading-7 tracking-wide mb-4 text-justify lg:text-left">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
         quod eos fuga a, quisquam amet cumque delectus dignissimos
         laboriosam pariatur at optio nemo cupiditate animi dolores! Cum illo

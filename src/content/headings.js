@@ -1,9 +1,11 @@
 const HEADINGS = {
   hero: {
-    mainTitle: "Sadb's House of Design",
-    subTitle: "Live a Beautiful Life"
+    mainTitle: "Interior Design House",
+    subTitle: "Live a Beautiful Life",
+    logo: "Design House"
   },
   sections: ["Our Services", "Previous Projects", "Contact Us"],
+  subsections: ["All Projects"],
   footer: ["Contact", "Find Us On", "Our Policy"],
 }
 

@@ -1,26 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Logo from "../../icons/Logo.jsx";
 import Navbar from "./Navbar";
 
 export default function Header({ ...props }) {
   const [active, setActive] = useState(false);
-  const [isSmallMenu, setIsSmallMenu] = useState(false);
-
-  //todo add dynamic offset
-  function handleScroll() {
-    if (window.pageYOffset > 450) {
-      if (!isSmallMenu) setIsSmallMenu(true);
-    } else {
-      if (isSmallMenu) setIsSmallMenu(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll)
-    }
-  });
 
   function handleClickToggleMenu() {
     setActive(!active);
@@ -28,10 +11,7 @@ export default function Header({ ...props }) {
 
   return (
       <header className="relative">
-      <div className={`${isSmallMenu ? "transition-all duration-300 py-4" : "py-10 transition-all duration-300"}
-      
-        bg-white text-gray-700 z-40 w-full inset-x-0 px-4 fixed right-0 left-0 md:shadow-md
-      `}>
+      <div className="py-10 transition-all duration-300 bg-white text-gray-700 z-40 w-full inset-x-0 px-4 fixed right-0 left-0 md:shadow-md">
         <div className="flex max-w-7xl m-auto justify-between">
           <Logo color="text-gray-700" size="w-10 h-10" />
           <div

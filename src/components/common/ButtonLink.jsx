@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import scrollToTop from "../../utilities/scrollToTop";
 
 export default function ButtonLink({ content, bgColor, borderColor, size, linkTo, handleClick, ...props }) {
    
@@ -11,7 +10,7 @@ export default function ButtonLink({ content, bgColor, borderColor, size, linkTo
     >
       <Link
         to={linkTo}
-        className={`${size} uppercase text-white font-extralight`}
+        className={`${size} uppercase text-white tracking-wider`}
       >
         {content}
       </Link>
@@ -24,6 +23,5 @@ ButtonLink.defaultProps = {
   bgColor: "bg-yellow-800",
   borderColor: "bg-yellow-800",
   size: "text-base",
-  handleClick: scrollToTop,
 }
 

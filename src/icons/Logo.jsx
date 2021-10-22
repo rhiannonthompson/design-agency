@@ -1,8 +1,11 @@
 import React from "react";
 import { useHistory } from "react-router";
+import HEADINGS from "../content/headings";
 
 export default function Logo({ color, size, hover, ...props }) {
   const location = useHistory();
+
+  const logoContent = HEADINGS.hero.logo;
 
   function handleClick() {
     location.push("/");
@@ -30,7 +33,7 @@ export default function Logo({ color, size, hover, ...props }) {
           />
         </svg>
         <span className={`pl-1 text-xl group-hover:text-yellow-700 ${color}`}>
-          Sadb's House
+          {logoContent}
         </span>
       </div>
     </div>
